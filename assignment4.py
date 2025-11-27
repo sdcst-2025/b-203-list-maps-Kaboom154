@@ -6,3 +6,12 @@ Given a list of words, make sure that the first letter is capitalized and the re
 data = ['apple', 'BANANA', 'mango', 'GrapE']   
 # expected output: ['Apple', 'Banana', 'Mango', 'Grape']
 # HINT: use the str.capitalize() method to capitalize the first letter of a string and make the rest lower case
+
+def capitalize(i):
+    if type(i) != str:
+        return
+    x= i.capitalize()
+    return x
+
+capitaized = map(capitalize,data)
+print(list(capitaized))
